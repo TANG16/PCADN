@@ -1,2 +1,5 @@
 # PCADN
-Principal Component Analysis Denoising
+This repository contains the code I used while writing my final report for UBC's EOSC 510 "EOSC 510 · Data Analysis in Atmospheric, Earth and Ocean Sciences"
+
+### Abstract 
+Seismic surveys are an essential part of estimating the geometry of the Earth’s subsurface, and the inclusion of experimental noise in recordings is unavoidable in practice. In this paper PCA is investigated as a potential method of quickly denoising seismic data volumes. Synthetic white Gaussian noise is injected into every trace of a benchmark volume, and PCA is performed on time and frequency slices in the mid point – offset domain. It is found that there is always one optimum choice of 𝑘, the number of PCs used to reconstruct the volume, and that the signal is fit by a fraction of PCs where as noise is distributed amongst the remaining PCs. Reconstruction using the optimum 𝑘 value in both the time and frequency domains reduces noise by ~60%, however operating in the time domain does a better job preserving the underlying signal. The method is limited in the sense that the optimum choice of 𝑘 is not clear without benchmarking against the input signal. The results implicate that this method could be used as an effective first step in traditional denoising schemes, or as a quality assessment tool during acquisition.
